@@ -1,0 +1,52 @@
+body {
+	background-color: #b3b3cc;
+}
+.welcome{
+	color: black;
+	text-align: center;
+	/*font-size: 5em;*/
+	/*font: arial;*/
+}
+.page-header li{
+	font-size: 1.5em;
+	
+}
+.footimg{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+/*.columnRight {
+	border-left: 25px;
+}
+.columnCenter {
+	border-left: 1px;
+	
+}*/
+#borderforcenter{
+	border:solid;
+	border-top:3px;
+	border-bottom:3px;
+}
+.logins{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	color: black;
+}
+h3 {
+	text-decoration: underline;
+}
+
+.csLogoRight{
+	margin-top: 20px;
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+.csLogoLeft{
+	margin-top: 20px;
+	height: 100px;
+	width: 100px;
+	float: right;
+}

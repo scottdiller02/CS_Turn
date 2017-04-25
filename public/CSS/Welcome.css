@@ -50,3 +50,17 @@ h3 {
 	width: 100px;
 	float: right;
 }
+#greeting{
+	font-size: 2em;
+}
+#greetbtn{
+	margin-left: 150px;
+}
+.greetcontent{
+	margin-left: 125px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.contactcontent{
+	margin-left: 50px;
+}

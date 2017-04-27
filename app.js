@@ -4,8 +4,8 @@ var path=require("path");
 var handlebars=require("express-handlebars").create({defaultLayout:"home"});
 var bodyParser = require('body-parser');
 var db = require('./db');
-var dbLink=require("./json/config.json");
-//var dbLink=require("./json/dbproduction.json");
+//var dbLink=require("./json/config.json");
+var dbLink=require("./json/dbproduction.json");
 var url = dbLink.devServer.url;
 
 var session=require("express-session");

@@ -27,9 +27,6 @@ db.connect(url, function(err){
 } else {
 	var listener=http.createServer(app).listen(process.env.PORT||3000);
 	console.log('Server is listening at port'+listener.address().port);
-	//app.listen(3000, function() {
-    //  console.log('Listening on port 3000...')
-    //})
  }
 })
 
@@ -42,11 +39,6 @@ app.get("/home",function(req,res){
 		console.log("Coming amainrequest!");
 	res.sendFile(`${publicPath}/home.html`);
 });
-
-//app.get("/menu",function(req,res){
-//		console.log("Coming a menurequest!");
-//	res.sendFile(`${publicPath}/menu.html`);
-//});
 
 app.get("/welcome",function(req,res){
 		console.log("Coming a signuprequest!");
@@ -63,39 +55,15 @@ app.get("/contactus",function(req,res){
 	res.sendFile(`${publicPath}/contact.html`);
 });
 
-/*
-app.get("/cart",function(req,res){
-		console.log("Coming a signuprequest!");
-	res.render(`cart`);
-});
-*/
-/*app.get("/about",function(req,res){
-		console.log("Coming a request!");
-	res.sendFile(`${publicPath}/about.html`);
-});
-*/
 app.get("/signin",function(req,res){
 		console.log("Coming a signuprequest!");
 	res.render(`signin`);
 });
 
-//app.get("/getMenuItems", function(req, res){
-//
-
-//});
-
-//app.listen(3000, function () {
-//	console.log('Example app listening on port 3000!')
-//});
-
-/*app.post("/signupServer", function (req,res){
-		console.log("Coming a signup request!");
-	res.send("THe server is handling your request"+req.body.email);
+app.get("/map",function(req,res){
+		console.log("Coming a request!");
+	res.sendFile(`${publicPath}/map.html`);
 });
-*/
-
-//var listener=http.createServer(app).listen(process.env.PORT||3000);
-//console.log('Server is listening at port'+listener.address().port);
 
 app.set('db',db);
 module.exports.app=app;

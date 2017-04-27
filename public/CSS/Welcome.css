@@ -24,13 +24,6 @@ body {
 	margin-bottom: 10px;
 	float: right;
 }
-/*.columnRight {
-	border-left: 25px;
-}
-.columnCenter {
-	border-left: 1px;
-	
-}*/
 #borderforcenter{
 	border:solid;
 	border-top:3px;
@@ -44,14 +37,12 @@ body {
 h3 {
 	text-decoration: underline;
 }
-
 .csLogoRight{
 	margin-top: 20px;
 	height: 100px;
 	width: 100px;
 	float: left;
 }
-
 .csLogoLeft{
 	margin-top: 20px;
 	height: 100px;
@@ -72,7 +63,26 @@ h3 {
 .contactcontent{
 	margin-left: 50px;
 }
+.aptDes{
+	font-size: 150%;
+	font-weight: bold;
 
-li {
+}
+.needs{
 	color: red;
+	font-weight: bold;
+	font-size: 150%;
+}
+.notes{
+	font-size: 115%;
+}
+.noteWord{
+	font-size: 110%;
+	font-weight: bold;
+}
+.aptsContainer{
+	margin-left: 25px;
+}
+.mapDiv{
+	margin-left: 400px;
 }

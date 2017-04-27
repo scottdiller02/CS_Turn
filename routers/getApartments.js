@@ -2,7 +2,7 @@ var express = require('express')
 , router = express.Router()
 
 var db=require("../db");
-//change 
+ 
 router.get("/getApartments", function(req, res){
 	var collection1 = db.getDb().collection('phase1')
 	var collection2 = db.getDb().collection('phase2')
@@ -61,33 +61,5 @@ router.get("/apartments", function(req, res){
 	})
 })
 
-/*
-	collection2.find().toArray(function(err, docs2){
-	//docs contains all records from menu in 
-	//js array format
-	//var info=[];
-	//for(doc of docs) 
-	//info.push(doc);
-	res.render('apartments', {infoP2: docs2})
-	})
 
-	collection3.find().toArray(function(err, docs3){
-	//docs contains all records from menu in 
-	//js array format
-	//var info=[];
-	//for(doc of docs) 
-	//info.push(doc);
-	res.render('apartments', {infoP3: docs3})
-	})
-
-	collection4.find().toArray(function(err, docs4){
-	//docs contains all records from menu in 
-	//js array format
-	//var info=[];
-	//for(doc of docs) 
-	//info.push(doc);
-	res.render('apartments', {infoP4: docs4})
-	})
-})
-*/
 module.exports = router

@@ -58,6 +58,11 @@ app.get("/apartments",function(req,res){
 	res.sendFile(`${publicPath}/apartments.html`);
 });
 
+app.get("/contactus",function(req,res){
+		console.log("Coming a request!");
+	res.sendFile(`${publicPath}/contact.html`);
+});
+
 /*
 app.get("/cart",function(req,res){
 		console.log("Coming a signuprequest!");

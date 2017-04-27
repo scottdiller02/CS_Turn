@@ -3,7 +3,8 @@ body {
 	background-color: #b3b3cc;
 	background-repeat: no-repeat;
 	background-position: center;
-	
+	opacity: 0.9;
+	background-size: 500px 500px;
 
 }
 

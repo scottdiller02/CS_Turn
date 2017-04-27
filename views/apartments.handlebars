@@ -1,0 +1,64 @@
+{{!-- PHASE 1 --}}
+<div class="phase1">
+<h2>Phase 1:</h2>
+<div class="row">
+{{#each infoP1}}
+<div class="col-md-4">
+			<div class="text-center">
+			<h3 class="aptname">{{name}}</h3>
+			<img class="pizzaimg" src="{{img}}" alt="{{name}}">
+			<h4>${{price}}</h4>
+				<button type="button" class="btn btn-primary " onclick="addToCart({{@index}})">Order</button>
+			</div>
+</div>
+{{/each}}
+</div>
+</div>
+{{!-- PHASE 2 --}}
+<div class="phase2">
+<h2>Phase 2:</h2>
+<div class="row">
+{{#each infoP2}}
+<div class="col-md-4">
+			<div class="text-center">
+			<h3 class="pizzaName">{{name}}</h3>
+			<img class="pizzaimg" src="{{img}}" alt="{{name}}">
+			<h4>${{price}}</h4>
+				<button type="button" class="btn btn-primary " onclick="addToCart({{@index}})">Order</button>
+			</div>
+</div>
+{{/each}}
+</div>
+</div>
+{{!-- PHASE 3 --}}
+<div class="phase3">
+<h2>Phase 3:</h2>
+<div class="row">
+{{#each infoP3}}
+<div class="col-md-4">
+			<div class="text-center">
+			<h3 class="pizzaName">{{name}}</h3>
+			<img class="pizzaimg" src="{{img}}" alt="{{name}}">
+			<h4>${{price}}</h4>
+				<button type="button" class="btn btn-primary " onclick="addToCart({{@index}})">Order</button>
+			</div>
+</div>
+{{/each}}
+</div>
+</div>
+{{!-- PHASE 4 --}}
+<div class="phase4">
+<h2>Phase 4:</h2>
+<div class="row">
+{{#each infoP4}}
+<div class="col-md-4">
+			<div class="text-center">
+			<h3 class="pizzaName">{{name}}</h3>
+			<img class="pizzaimg" src="{{img}}" alt="{{name}}">
+			<h4>${{price}}</h4>
+				<button type="button" class="btn btn-primary " onclick="addToCart({{@index}})">Order</button>
+			</div>
+</div>
+{{/each}}
+</div>
+</div>

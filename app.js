@@ -4,8 +4,8 @@ var path=require("path");
 var handlebars=require("express-handlebars").create({defaultLayout:"home"});
 var bodyParser = require('body-parser');
 var db = require('./db');
-//var dbLink=require("./json/config.json");
-var dbLink=require("./json/dbproduction.json");
+var dbLink=require("./json/config.json");
+//var dbLink=require("./json/dbproduction.json");
 var url = dbLink.devServer.url;
 var app=express();
 
@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 //app.use(bodyParser.urlencoded({extended: true}));app.use(bodyParser.json());
 var publicPath=path.resolve(__dirname, "public"	);
 app.use(express.static(publicPath));
-//CHANGE app.use(require('./routers/popMenus'));
+app.use(require('./routers/getApartments'));
 //app.user routers
 //CHANGE app.use(require("./routers/getMenuItems"));
 //CHANGE app.use(require('./routers/signup'));
@@ -55,7 +55,7 @@ app.get("/welcome",function(req,res){
 
 app.get("/apartments",function(req,res){
 		console.log("Coming a request!");
-	res.sendFile(`${publicPath}/apartments.html`);
+	res.render(`apartments`);
 });
 
 app.get("/contactus",function(req,res){

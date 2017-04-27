@@ -4,7 +4,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	opacity: 0.9;
+	
 	background-size: 500px 500px;
 
 }
@@ -12,8 +12,6 @@ body {
 .welcome{
 	color: black;
 	text-align: center;
-	/*font-size: 5em;*/
-	/*font: arial;*/
 }
 .page-header li{
 	font-size: 1.5em;
@@ -28,6 +26,12 @@ body {
 	border:solid;
 	border-top:3px;
 	border-bottom:3px;
+}
+#borderforleft{
+	border:solid;
+	border-top:3px;
+	border-bottom:3px;
+	border-right:3px;
 }
 .logins{
 	margin-top: 100px;
